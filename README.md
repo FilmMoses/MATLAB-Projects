@@ -36,28 +36,3 @@ This repository contains vectorized, modular MATLAB implementations of foundatio
 * **Classical 4th-Order Runge-Kutta (RK4):** Multi-stage integration for non-stiff systems $y' = f(t, y)$:
   $$y_{n+1} = y_n + \frac{h}{6}(k_1 + 2k_2 + 2k_3 + k_4)$$
 
----
-
-## 📁 Repository Structure
-
-```text
-├── linear_algebra/
-│   ├── lu_pivot.m              # LU factorization with partial pivoting
-│   ├── forward_sub.m           # Forward substitution solver
-│   ├── back_sub.m              # Backward substitution solver
-│   └── jacobi_iteration.m      # Stationary iterative linear solver
-├── root_finding/
-│   ├── bisection.m             # Interval halving root solver
-│   ├── newton_raphson.m        # Derivative-based iterative root solver
-│   └── secant_method.m         # Discrete secant approximation
-├── quadrature/
-│   ├── composite_trapezoid.m   # 2nd-order composite integration
-│   └── composite_simpson.m     # 4th-order composite integration
-├── ode_solvers/
-│   ├── forward_euler.m         # 1st-order explicit Euler solver
-│   └── runge_kutta_4.m         # 4th-order Runge-Kutta integrator
-├── analysis/
-│   ├── error_analysis.m        # Absolute vs. relative error tracking
-│   └── convergence_plots.m     # Log-log slope evaluation for order of accuracy
-├── figures/                    # Exported convergence curves and plots
-└── README.md
